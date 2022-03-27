@@ -9,9 +9,9 @@ API um Fenster zu erzeugen und Projekte in Hauptprogramm einzubinden.
 
 ### "Installieren"
 
-Im Projektordner muss die Datei `fenster.json` angelegt werden. Sie muss folgende Struktur haben:
-```json
+Im Projektordner muss die Datei `fenster.json` angelegt werden. Sie muss folgenden Kopf haben:
+```
 "Projektname" : "[Projektname]"
 "Projektversion" : "[Version]"
-"stable" : //true / false
+"stable" : true / false
 ```
