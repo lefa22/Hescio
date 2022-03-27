@@ -2,6 +2,8 @@
 
 API um Fenster zu erzeugen und Projekte in Hauptprogramm einzubinden.
 
+WARNUNG: Projekt noch in Entwicklung
+
 
 
 ## Dokumentation
@@ -9,7 +11,7 @@ API um Fenster zu erzeugen und Projekte in Hauptprogramm einzubinden.
 
 ### "Installieren"
 
-Im Projektordner muss die Datei `fenster.json` angelegt werden. Sie muss folgenden Kopf haben:
+Im Projektordner muss die Datei `fenster.json` angelegt werden. Durch anlegen dieser Datei wird das Projekt von `FensterAPI` registriert. Die Datei muss folgenden Kopf haben:
 ```
 "Projektname" : "[Projektname]"
 "Projektversion" : "[Version]"
