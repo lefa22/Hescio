@@ -13,5 +13,5 @@ Im Projektordner muss die Datei `fenster.json` angelegt werden. Sie muss folgend
 ```json
 "Projektname" : "[Projektname]"
 "Projektversion" : "[Version]"
-"stable" : True
+"stable" : true / false
 ```
