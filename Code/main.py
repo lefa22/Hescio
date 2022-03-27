@@ -1,9 +1,14 @@
 """
 main programm
 """
-import os
+import tkinter as tk
+from tkinter import messagebox
 
+root = tk.Tk()
 
-print("[Platzhalter]")
+platzhalterLabel = tk.Label(root, text="Platzhalter")
+platzhalterLabel.pack(expand=1)
 
-os.system("pause")
+root.title("Hescio")
+root.geometry("210x100")
+root.mainloop()
