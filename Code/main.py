@@ -18,23 +18,33 @@ topBanner = tk.Frame(root, background="#d35c00")
 topBannerLabel = tk.Label(topBanner, text="Dieses Programm befindet sich noch in Bearbeitung.", bg="#d35c00", font=("standard", 11), anchor="w")
 topBannerLabel.pack(expand=1, fill="both", padx=10, pady=10, side="left")
 
-topBannerX = tk.Label(topBanner, text="X", bg="#d35c00", font=("Fredoka", 12))
+topBannerX = tk.Label(topBanner, text="X", bg="#d35c00", font=("standard", 12))
 topBannerX.pack(expand=0, fill="both", padx=20, pady=10, side="right")
 
 topBanner.pack(side="top", expand=0, fill="both")
 
 
-mainContent = tk.Frame(root)
-mainContent.pack(side="bottom", expand=1)
+content = tk.Frame(root)
+content.pack(side="bottom", expand=1, fill="both")
+
+mainContent = tk.Frame(content)
+mainContent.pack(side="top", expand=1, fill="both")
 
 platzhalterLabel = tk.Label(mainContent, text="Platzhalter")
 platzhalterLabel.pack(expand=1)
+
+platzhalterLabel = tk.Label(content, text="Version 0.0.0.1", anchor="e")
+platzhalterLabel.pack(expand=0, fill="x", padx=3, side="bottom")
 
 
 
 menu = tk.Menu(root, borderwidth=2)
 
 filemenu = tk.Menu(menu, tearoff=0)
+filemenu.add_cascade(label="Changelog", command=None, state="disabled", activebackground="#f0f0f0")
+filemenu.add_cascade(label="Dokumentation", command=None, state="disabled", activebackground="#f0f0f0")
+filemenu.add_cascade(label="Einstellungen", command=None, state="disabled", activebackground="#f0f0f0")
+filemenu.add_separator()
 filemenu.add_cascade(label="Schließen", command=root.destroy)
 
 modulemenu = tk.Menu(menu, tearoff=0)
