@@ -3,6 +3,7 @@ main programm
 """
 
 import tkinter as tk
+import info
 
 
 
@@ -44,6 +45,7 @@ filemenu = tk.Menu(menu, tearoff=0)
 filemenu.add_cascade(label="Changelog", command=None, state="disabled", activebackground="#f0f0f0")
 filemenu.add_cascade(label="Dokumentation", command=None, state="disabled", activebackground="#f0f0f0")
 filemenu.add_cascade(label="Einstellungen", command=None, state="disabled", activebackground="#f0f0f0")
+filemenu.add_cascade(label="Info", command=info.show)
 filemenu.add_separator()
 filemenu.add_cascade(label="Schließen", command=root.destroy)
 
@@ -61,6 +63,6 @@ topBannerX.bind("<ButtonPress-1>", closeBanner)
 
 root.config(menu=menu)
 root.title("Hescio")
-root.geometry("500x350")
+root.geometry(f"500x350+{int(root.winfo_screenwidth()/2-500/2)}+{int(root.winfo_screenheight()/2-350/2)}")
 root.minsize(width=420, height=100)
 root.mainloop()
