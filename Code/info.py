@@ -1,7 +1,5 @@
 import tkinter as tk
 
-icon = 0
-
 def show():
     infoFenster = tk.Tk()
 
