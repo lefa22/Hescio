@@ -4,10 +4,12 @@ main programm
 
 import tkinter as tk
 import info
+import pathlib
 
 
 
 root = tk.Tk()
+icon = tk.PhotoImage(file=f"{pathlib.Path(__file__).parent.absolute()}\Icon\Hescio[klein].png")
 
 
 
@@ -65,4 +67,5 @@ root.config(menu=menu)
 root.title("Hescio")
 root.geometry(f"500x350+{int(root.winfo_screenwidth()/2-500/2)}+{int(root.winfo_screenheight()/2-350/2)}")
 root.minsize(width=420, height=100)
+root.iconphoto(True, icon)
 root.mainloop()
